@@ -1,4 +1,4 @@
 
-public interface Test {
+public class Test {
 
 }
