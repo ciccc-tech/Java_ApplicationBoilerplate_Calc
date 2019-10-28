@@ -11,6 +11,14 @@ public class Test {
 
 		}
 	
+	public static void Test_MathRunAll()
+	{
+		Test_MathAdd();
+		Test_MathSub();
+		Test_MathMul();
+		Test_MathDiv();
+	}
+	
 	public static void Test_Console_NewLine()
 	{
 		for (int i = 0; i < 10; i++)
@@ -98,6 +106,96 @@ public class Test {
 			else
 				{
 				Debug.logInfo("Add: " + numA + " + " + numB + " = " + int_result + " - FAIL");	
+				}						
+			}
+		}	
+	
+	}
+	
+	public static void Test_MathSub()
+	{
+		int int_result = 0;
+	int max_num = 100; // lets choose an upper bounds for the test, so that our program doesn't take FOREVER
+	
+	// lets test for ints
+	
+	// lets create a loop that will choose a number for A - starting from 0 and going to 100	
+	for (int numA = 0; numA < max_num; numA++)
+		{
+		// lets create a loop that will choose a number for B - starting from 0 and going to 1000
+		for (int numB = 0; numB < max_num; numB++)
+			{
+			// lets get java to calculate the result first, 
+			int_result = numA - numB;					
+			// now lets compare it to our BasicMath.Sub method
+			if (int_result == BasicMath.sub(numA, numB) == true)
+				{
+				// we have a match, PASS
+				Debug.logInfo("Sub: " + numA + " - " + numB + " = " + int_result + " - PASS");
+				}
+			else
+				{
+				Debug.logInfo("Sub: " + numA + " - " + numB + " = " + int_result + " - FAIL");	
+				}						
+			}
+		}	
+	
+	}
+	
+	public static void Test_MathMul()
+	{
+		int int_result = 0;
+	int max_num = 100; // lets choose an upper bounds for the test, so that our program doesn't take FOREVER
+	
+	// lets test for ints
+	
+	// lets create a loop that will choose a number for A - starting from 0 and going to 100	
+	for (int numA = 0; numA < max_num; numA++)
+		{
+		// lets create a loop that will choose a number for B - starting from 0 and going to 1000
+		for (int numB = 0; numB < max_num; numB++)
+			{
+			// lets get java to calculate the result first, 
+			int_result = numA * numB;					
+			// now lets compare it to our BasicMath.Sub method
+			if (int_result == BasicMath.mul(numB, numA) == true)
+				{
+				// we have a match, PASS
+				Debug.logInfo("Mul: " + numB + " * " + numA + " = " + int_result + " - PASS");
+				}
+			else
+				{
+				Debug.logInfo("Muk: " + numB + " * " + numA + " = " + int_result + " - FAIL");	
+				}						
+			}
+		}	
+	
+	}
+	
+	public static void Test_MathDiv()
+	{
+	int int_result = 0;
+	int max_num = 100; // lets choose an upper bounds for the test, so that our program doesn't take FOREVER
+	
+	// lets test for ints
+	
+	// lets create a loop that will choose a number for A - starting from 0 and going to 100	
+	for (int numA = 1; numA < max_num; numA++)
+		{
+		// lets create a loop that will choose a number for B - starting from 0 and going to 1000
+		for (int numB = 1; numB < max_num; numB++)
+			{
+			// lets get java to calculate the result first, 
+			int_result = numA / numB;					
+			// now lets compare it to our BasicMath.Sub method
+			if (int_result == BasicMath.div(numA, numB) == true)
+				{
+				// we have a match, PASS
+				Debug.logInfo("Mul: " + numA + " * " + numB + " = " + int_result + " - PASS");
+				}
+			else
+				{
+				Debug.logInfo("Muk: " + numA + " * " + numB + " = " + int_result + " - FAIL");	
 				}						
 			}
 		}	

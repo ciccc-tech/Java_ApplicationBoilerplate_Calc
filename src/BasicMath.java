@@ -42,76 +42,35 @@ public class BasicMath {
 	
 	public static int mul(int amount, int by)
 	{
-		// i  can also 
-		// return amount * by;
-		// but here i chose to add repeatably 
-		int aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = add(by,amount); 
-		}
-		return aResult;
+		
+	return amount * by;
+	
 	}
 	
 	public static float mul(float amount, float by)
 	{
-		// i  can also 
-		// return amount * by;
-		// but here i chose to add repeatably 
-		float aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = add(by,amount); 
-		}
-		return aResult;
+		return amount * by;
 	}
 	
 	public static double mul(double amount, double by)
 	{
-		// i  can also 
-		// return amount * by;
-		// but here i chose to add repeatably 
-		double aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = add(by,amount); 
-		}
-		return aResult;
+		return amount * by;
 	}
 	
 	public static int div(int amount, int by)
 	{
-		// i  can also 
-		// return amount / by;
-		// but here i chose to sub repeatably 
-		int aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = sub(by,amount); 
-		}
-		return aResult;
+	return amount / by;
 	}
 	
 	public static float div(float amount, float by)
 	{
-		// i  can also 
-		// return amount / by;
-		// but here i chose to sub repeatably 
-		
-		float aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = sub(by,amount); 
-		}
-		return aResult;
+		return amount / by;
 	}
 	
 	public static double div(double amount, double by)
 	{
 	// i  can also 
-	// return amount / by;
-	// but here i chose to sub repeatably 
-		
-		double aResult = 0;
-		for (int i = 0; i < by; i++) {
-			aResult = sub(by,amount); 
-		}
-		return aResult;
+		return amount / by;
 	}
 	
 	

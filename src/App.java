@@ -34,7 +34,8 @@ public class App {
 			{
 			Debug.log("Found -runTests in argument list: - will run tests now");
 			//lets run some tests
-			Test.Test_Console_RunAll();
+			//Test.Test_Console_RunAll();
+			Test.Test_MathRunAll();
 			}
 		// 
 		
