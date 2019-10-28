@@ -12,17 +12,17 @@ public class Debug {
 	
 	public static void logInfo(String  message)
 	{
-		
+		Console.println("[" + getDateTimeString() + "] - [INFO] - " + message);	
 	}
 	
 	public static void logWarning(String  message)
 	{
-		
+		Console.println("[" + getDateTimeString() + "] - [WARN] - " + message);
 	}
 	
 	public static void logException(String  message)
 	{
-		
+		Console.println("[" + getDateTimeString() + "] - [EXCEPTION] - " + message);
 	}
 	
 	public static String getDateTimeString()

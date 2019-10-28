@@ -14,6 +14,9 @@ public class App {
 	
 	// Set a default value to false will keep our program running
 	private static boolean _shouldTerminate = false;
+	
+	// If true, we will run our tests
+	private static boolean _shouldRunTests = true;
 
 	/**
 	 * @param args
@@ -23,6 +26,15 @@ public class App {
 		
 		// create an 'instance' of CommandLine object with the name cmdLine
 		cmdLine = new CommandLine(args); // give it 'args' so that it knows what arguments were used (if any) on startup
+		
+		
+		// should we run our tests?
+		if (_shouldRunTests == true)
+			{
+			//lets run some tests
+			Test.Test_Console_RunAll();
+			}
+		// 
 		
 		do  // this code will be run at least 'once' and if _shouldTerminate == false, then it will continue to loop
 			{
